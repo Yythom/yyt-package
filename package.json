@@ -1,6 +1,6 @@
 {
 	"name": "yyt-package",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "公共组件包",
 	"main": "index.js",
 	"author": "虎虎",
@@ -84,6 +84,11 @@
 		"storybook-addon-performance": "^0.16.1",
 		"typescript": "^4.6.3",
 		"yorkie": "^2.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Yythom/yyt-package.git",
+		"directory": "types/react-dom"
 	},
 	"preconstruct": {
 		"packages": [
