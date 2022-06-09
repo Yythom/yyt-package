@@ -1,0 +1,19 @@
+{
+    "name": "@yyt/react-utils",
+    "version": "0.0.4",
+    "description": "vjshi react utils",
+    "sideEffects": false,
+    "main": "dist/yyt-react-utils.cjs.js",
+    "module": "dist/yyt-react-utils.esm.js",
+    "types": "dist/yyt-react-utils.cjs.d.ts",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "devDependencies": {
+        "react": "^18.0.0"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0"
+    }
+}

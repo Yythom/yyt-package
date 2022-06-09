@@ -1,0 +1,95 @@
+{
+	"name": "yyt-package",
+	"version": "1.0.0",
+	"description": "公共组件包",
+	"main": "index.js",
+	"author": "虎虎",
+	"license": "MIT",
+	"scripts": {
+		"pkg": "manypkg run",
+		"init:pkg": "yarn pkg @yyt/init-package start",
+		"check:pkgs": "manypkg check",
+		"fix:pkgs": "manypkg fix",
+		"version:pkgs": "changeset version",
+		"dev": "preconstruct dev",
+		"watch": "preconstruct watch",
+		"build": "preconstruct build",
+		"release": "yarn build && changeset publish",
+		"release:lerna": "lerna publish",
+		"bootstrap": "lerna bootstrap --hoist",
+		"version:lerna": "yarn fix:pkgs && git add .",
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"prestorybook": "rimraf node_modules/.cache/storybook && yarn dev",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"gitHooks": {
+		"pre-commit": "lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,jsx}": [
+			"eslint --fix"
+		],
+		"*.ts?(x)": [
+			"eslint --fix"
+		]
+	},
+	"resolutions": {
+		"rollup": "2.70.0",
+		"react-refresh": "0.12.0",
+		"react-query": "4.0.0-beta.13",
+		"@pmmmwh/react-refresh-webpack-plugin": "0.5.5"
+	},
+	"workspaces": [
+		"packages/*",
+		"packages/ui/*",
+		"packages/feat/*",
+		"apps/examples",
+		"tooling/*"
+	],
+	"dependencies": {
+		"@babel/core": "^7.17.9",
+		"@babel/eslint-parser": "^7.17.0",
+		"@babel/preset-env": "^7.16.11",
+		"@babel/preset-react": "^7.16.7",
+		"@babel/preset-typescript": "^7.16.7",
+		"@changesets/cli": "2.22.0",
+		"@commitlint/cli": "16.2.1",
+		"@commitlint/config-conventional": "16.2.1",
+		"@manypkg/cli": "0.19.1",
+		"@preconstruct/cli": "^2.1.5",
+		"@storybook/addon-storysource": "^6.5.8",
+		"@storybook/react": "^6.5.8",
+		"@storybook/testing-library": "^0.0.11",
+		"@types/react": "^18.0.12",
+		"@types/react-dom": "^18.0.5",
+		"@typescript-eslint/eslint-plugin": "5.22.0",
+		"@typescript-eslint/parser": "^5.22.0",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.2.5",
+		"conventional-changelog-cli": "^2.2.2",
+		"eslint": "8.14.0",
+		"eslint-config-airbnb": "19.0.4",
+		"eslint-config-airbnb-typescript": "17.0.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-import-resolver-webpack": "0.13.2",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-jsx-a11y": "6.5.1",
+		"eslint-plugin-prettier": "4.0.0",
+		"eslint-plugin-react": "7.29.4",
+		"eslint-plugin-react-hooks": "4.5.0",
+		"lerna": "^3.22.1",
+		"lint-staged": "12.4.1",
+		"rimraf": "^3.0.2",
+		"storybook-addon-performance": "^0.16.1",
+		"typescript": "^4.6.3",
+		"yorkie": "^2.0.0"
+	},
+	"preconstruct": {
+		"packages": [
+			"packages/*",
+			"packages/ui/*",
+			"packages/feat/*"
+		]
+	}
+}

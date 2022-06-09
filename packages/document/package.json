@@ -1,0 +1,22 @@
+{
+    "name": "@yyt/document",
+    "version": "0.0.4",
+    "description": "document",
+    "sideEffects": false,
+    "main": "dist/yyt-document.cjs.js",
+    "module": "dist/yyt-document.esm.js",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "serialize-javascript": "^6.0.0"
+    },
+    "devDependencies": {
+        "react": "^18.0.0"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "@yyt/init-package",
+    "version": "0.0.1",
+    "description": "init the package with a template",
+    "main": "src/index.js",
+    "license": "MIT",
+    "bin": {
+        "init-pkg": "bin/index"
+    },
+    "scripts": {
+        "start": "node bin/index"
+    },
+    "files": [
+        "bin",
+        "src"
+    ],
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "cli-welcome": "^2.2.2",
+        "commander": "^2.19.0",
+        "fs-extra": "^10.1.0",
+        "inquirer": "^6.2.2",
+        "npm": "^8.10.0",
+        "ora": "^3.2.0"
+    }
+}

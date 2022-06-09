@@ -1,0 +1,22 @@
+{
+    "name": "@yyt/hooks",
+    "version": "0.0.3",
+    "description": "react hooks",
+    "sideEffects": false,
+    "main": "dist/yyt-hooks.cjs.js",
+    "module": "dist/yyt-hooks.esm.js",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "dependencies": {
+        "js-cookie": "^3.0.1",
+        "react-use": "^17.3.2"
+    },
+    "devDependencies": {
+        "react": "^18.0.0"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0"
+    }
+}

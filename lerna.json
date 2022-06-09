@@ -1,0 +1,18 @@
+{
+    "packages": [
+        "packages/*",
+        "packages/features/*",
+        "packages/components/*"
+    ],
+    "version": "independent",
+    "npmClient": "yarn",
+    "command": {
+        "version": {
+            "exact": true
+        },
+        "publish": {
+            "message": "chore(base/release): publish",
+            "registry": "https://packages.aliyun.com/601b5fad8deaa14d9e02d77e/npm/npm-registry/"
+        }
+    }
+}

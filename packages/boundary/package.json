@@ -1,0 +1,23 @@
+{
+    "name": "@yyt/boundary",
+    "version": "0.0.2",
+    "description": "boundary",
+    "sideEffects": false,
+    "main": "dist/yyt-boundary.cjs.js",
+    "module": "dist/yyt-boundary.esm.js",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "dependencies": {
+        "react-error-boundary": "^3.1.4"
+    },
+    "devDependencies": {
+        "react": "^18.0.0",
+        "react-query": "^4"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0",
+        "react-query": "^3 || ^4"
+    }
+}

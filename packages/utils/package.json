@@ -1,0 +1,16 @@
+{
+    "name": "@yyt/utils",
+    "version": "0.0.3",
+    "description": "vjshi utils",
+    "sideEffects": false,
+    "main": "dist/yyt-utils.cjs.js",
+    "module": "dist/yyt-utils.esm.js",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "dependencies": {
+        "bezier-easing": "^2.1.0",
+        "tinycolor2": "^1.4.2"
+    }
+}
