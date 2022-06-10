@@ -1,6 +1,6 @@
 {
     "name": "yyt-toast",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "toast",
     "main": "dist/yyt-toast.cjs.js",
     "module": "dist/yyt-toast.esm.js",

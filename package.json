@@ -3,9 +3,10 @@
 	"version": "1.0.5",
 	"description": "公共组件包",
 	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"pkg": "manypkg run",
-		"init:pkg": "yarn pkg yyt/init-package start",
+		"init:pkg": "yarn pkg yyt-init-package start",
 		"check:pkgs": "manypkg check",
 		"fix:pkgs": "manypkg fix",
 		"version:pkgs": "changeset version",

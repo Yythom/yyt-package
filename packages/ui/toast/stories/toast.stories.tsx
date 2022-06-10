@@ -9,7 +9,7 @@ export const Demo = () => {
 
     return (
         <div>
-            <div>
+            <div style={{ paddingTop: '200px' }}>
                 <button onClick={() => {
                     toast('这是一个通知', { position: pos })
                 }}
@@ -38,15 +38,6 @@ export const Demo = () => {
                 }}
                 >
                     自定义icon
-                </button>
-                <button onClick={() => {
-                    toast('这是一个通知这是一个通知 这是一个通知 这是一个通知 这是一个通知 ', {
-                        duration: Infinity,
-                        position: pos,
-                    })
-                }}
-                >
-                    infinity
                 </button>
 
                 <button onClick={() => {
