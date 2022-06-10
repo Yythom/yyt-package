@@ -1,10 +1,11 @@
 {
-	"name": "yyt-package",
-	"version": "1.0.2",
+	"name": "yyt-common",
+	"version": "1.0.3",
 	"description": "公共组件包",
 	"main": "index.js",
 	"author": "虎虎",
 	"license": "MIT",
+	"private": true,
 	"scripts": {
 		"pkg": "manypkg run",
 		"init:pkg": "yarn pkg @yyt/init-package start",

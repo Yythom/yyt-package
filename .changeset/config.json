@@ -6,8 +6,5 @@
 	"linked": [],
 	"access": "restricted",
 	"baseBranch": "develop",
-	"updateInternalDependencies": "patch",
-	"ignore": [
-		"vjs-package-examples"
-	]
+	"updateInternalDependencies": "patch"
 }
