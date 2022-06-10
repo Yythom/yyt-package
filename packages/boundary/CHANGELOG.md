@@ -1,4 +1,4 @@
-# @yyt/boundary
+# yyt/boundary
 
 ## 0.0.2
 

@@ -1,5 +1,5 @@
 {
-    "name": "@yyt/hooks",
+    "name": "yyt-hooks",
     "version": "0.0.3",
     "description": "react hooks",
     "sideEffects": false,

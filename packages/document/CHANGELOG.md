@@ -1,4 +1,4 @@
-# @yyt/document
+# yyt/document
 
 ## 0.0.4
 

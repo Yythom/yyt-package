@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Portals from '@yyt-ui/portal'
+import Portals from 'yyt-portal'
 import { ToastPosition } from '../src/interface/types'
 import { Toaster } from '../src/toaster'
 import { toast } from '../src/core/toast'

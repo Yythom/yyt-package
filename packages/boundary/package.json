@@ -1,5 +1,5 @@
 {
-    "name": "@yyt/boundary",
+    "name": "yyt-boundary",
     "version": "0.0.2",
     "description": "boundary",
     "sideEffects": false,
@@ -14,10 +14,10 @@
     },
     "devDependencies": {
         "react": "^18.0.0",
-        "react-query": "^4"
+        "react-query": "^3.39.0"
     },
     "peerDependencies": {
         "react": "^18.0.0",
-        "react-query": "^3 || ^4"
+        "react-query": "^3.39.0"
     }
 }

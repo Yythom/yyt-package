@@ -12,7 +12,7 @@
         },
         "publish": {
             "message": "chore(base/release): publish",
-            "registry": "https://github.com/Yythom/yyt-package"
+            "registry": "https://packages.aliyun.com/601b5fad8deaa14d9e02d77e/npm/npm-registry/"
         }
     }
 }

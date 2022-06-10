@@ -1,9 +1,8 @@
 {
-    "name": "@yyt/init-package",
+    "name": "yyt-init-package",
     "version": "0.0.1",
     "description": "init the package with a template",
     "main": "src/index.js",
-    "license": "MIT",
     "bin": {
         "init-pkg": "bin/index"
     },

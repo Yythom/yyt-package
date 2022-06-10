@@ -46,11 +46,11 @@ const getPackJsonName = (dirPath, name) => {
     switch (dirPath) {
         case 'packages/ui':
         case 'packages/feat':
-            return `@yyt-${map[dirPath]}/${name}`
+            return `yyt-${map[dirPath]}/${name}`
         case 'packages':
-            return `@yyt/${name}`
+            return `yyt/${name}`
         default:
-            return `@yyt/${name}`
+            return `yyt/${name}`
     }
 }
 

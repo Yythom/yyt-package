@@ -1,4 +1,4 @@
-# @yyt/utils
+# yyt/utils
 
 ## 0.0.3
 

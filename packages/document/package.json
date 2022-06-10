@@ -1,5 +1,5 @@
 {
-    "name": "@yyt/document",
+    "name": "yyt-document",
     "version": "0.0.4",
     "description": "document",
     "sideEffects": false,

@@ -1,19 +1,17 @@
 {
-    "name": "@yyt-ui/portal",
-    "version": "0.0.0",
+    "name": "yyt-portal",
+    "version": "1.0.0",
     "description": "虎虎",
-    "main": "dist/yyt-ui-portal.cjs.js",
-    "module": "dist/yyt-ui-portal.esm.js",
-    "types": "dist/yyt-ui-portal.cjs.d.ts",
+    "main": "dist/yyt-portal.cjs.js",
+    "module": "dist/yyt-portal.esm.js",
+    "types": "dist/yyt-portal.cjs.d.ts",
     "sideEffects": false,
-    "author": "虎虎",
-    "license": "MIT",
     "files": [
         "src",
         "dist"
     ],
     "dependencies": {
-        "react-dom": "^18.1.0",
-        "react": "^18.1.0"
+        "react": "^18.0.0",
+        "react-dom": "^18.1.0"
     }
 }

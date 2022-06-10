@@ -1,1 +1,1 @@
-declare module '@yyt-ui/disclosure'
+declare module 'yyt-disclosure'

@@ -122,7 +122,7 @@ scope包括`base`、`ui`、`feat`、`boundary`、`config`、`cookie`、`document
 - Next.js
 - ~~StoryBook~~
 
-chakra-ui 2.0.0和@yyt/ui重构：
+chakra-ui 2.0.0和yyt/ui重构：
 - ~~Modal~~： 因动画需求的修改，modal全部引用导出chkra组件，不在自己维护, 删除了withModal，添加了useImperativeModal、ImpModalProvider 支持命令式使用。
 - ~~modal-with-action~~：新组件，导出了BaseModalWithAction、SelectActionModal、useSelectActionModal。
 - ~~Alert~~：重构组件，基于BaseModalWithAction封装的Alert，基于useImperativeModal封装的useAlert。props type替换为status，okButtonProps替换为okProps，废弃了afterClose。

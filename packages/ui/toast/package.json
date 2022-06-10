@@ -1,19 +1,17 @@
 {
-    "name": "@yyt-ui/toast",
-    "version": "0.0.0",
+    "name": "yyt-toast",
+    "version": "0.0.1",
     "description": "toast",
-    "main": "dist/yyt-ui-toast.cjs.js",
-    "module": "dist/yyt-ui-toast.esm.js",
+    "main": "dist/yyt-toast.cjs.js",
+    "module": "dist/yyt-toast.esm.js",
     "types": "dist/yyt-toast.cjs.d.ts",
     "sideEffects": false,
-    "author": "虎虎",
-    "license": "MIT",
     "files": [
         "src",
         "dist"
     ],
     "dependencies": {
         "goober": "^2.1.9",
-        "react": "^18.1.0"
+        "react": "^18.0.0"
     }
 }

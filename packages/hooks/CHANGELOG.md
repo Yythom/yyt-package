@@ -1,4 +1,4 @@
-# @yyt/hooks
+# yyt/hooks
 
 ## 0.0.3
 

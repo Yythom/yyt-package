@@ -1,10 +1,10 @@
 {
-    "name": "@yyt/utils",
+    "name": "yyt-common-utils",
     "version": "0.0.3",
     "description": "vjshi utils",
     "sideEffects": false,
-    "main": "dist/yyt-utils.cjs.js",
-    "module": "dist/yyt-utils.esm.js",
+    "main": "dist/yyt-common-utils.cjs.js",
+    "module": "dist/yyt-common-utils.esm.js",
     "files": [
         "src",
         "dist"
