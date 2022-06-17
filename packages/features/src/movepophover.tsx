@@ -40,7 +40,7 @@ const MoveBox = memo((props: any) => {
                 ...props.style,
             }}
         >
-            <MoveBoxContext.Provider value={{ creatAt, show }}>
+            <MoveBoxContext.Provider value={{ creatAt: creatAt.current, show }}>
                 {props.children}
             </MoveBoxContext.Provider>
         </div>
@@ -49,6 +49,7 @@ const MoveBox = memo((props: any) => {
 
 const MoveSquare = memo((props: any) => {
     const ctx = useContext(MoveBoxContext)
+
     return (
         <>
             {
