@@ -36,12 +36,28 @@ const Tabs = ({ children }) => {
     }, [])
 
     function move(index: number) {
-        const { rect: parent, scrollXY } = getRect(ref.current)
+        const { rect: parent, scrollXY, dom } = getRect(ref.current)
         const navInfos = getRects('.tab_item')
         const navInfo = navInfos[index]
-        console.log(parent, scrollXY)
-
         const x = navInfo.left - parent.left + scrollXY[0]
+
+        const i = x / 2
+        const timer = setInterval(() => {
+            if (i > scrollXY[0]) {
+                if (dom.scrollLeft >= i) {
+                    dom.scrollLeft = i
+                    clearInterval(timer)
+                } else {
+                    dom.scrollLeft += 3
+                }
+            } else if (dom.scrollLeft <= i) {
+                dom.scrollLeft = i
+                clearInterval(timer)
+            } else {
+                dom.scrollLeft -= 3
+            }
+        }, 15)
+
         setLineXYW([x, 0, navInfo.width])
         setIndex(index)
     }
@@ -91,7 +107,7 @@ const Tab = ({ children, index = null, active = false }) => {
                 color: active ? 'red' : 'black',
                 transition: '300ms',
             }}
-            onClick={() => { ctx.move(index) }}
+            onClick={() => { !active && ctx.move(index) }}
         >
             {children}
         </div>
